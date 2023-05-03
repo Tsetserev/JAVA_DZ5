@@ -40,7 +40,7 @@ public class StatsService {
         int count = 0;
         for (long sale : sales) {
             if (sale < avg) {
-                count = count + 1;
+                count++;
             }
         }
         return count;
@@ -51,7 +51,7 @@ public class StatsService {
         int count = 0;
         for (long sale : sales) {
             if (sale > avg) {
-                count = count + 1;
+                count++;
             }
         }
         return count;
