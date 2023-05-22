@@ -4,7 +4,7 @@ public class StatsService {
 
 
     public long sum(long[] sales) {
-       long sum =0;
+        long sum = 0;
         for (long sale : sales) {
             sum += sale;
         }
@@ -36,7 +36,7 @@ public class StatsService {
     }
 
     public int lessAvg(long[] sales) {
-        long avg =average(sales);
+        long avg = average(sales);
         int count = 0;
         for (long sale : sales) {
             if (sale < avg) {
@@ -47,7 +47,7 @@ public class StatsService {
     }
 
     public int aboveAvg(long[] sales) {
-        long avg =average(sales);
+        long avg = average(sales);
         int count = 0;
         for (long sale : sales) {
             if (sale > avg) {
